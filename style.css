@@ -1,70 +1,92 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  max-width: 400px;
-  background-color: #b4abab;
-  border-radius: 8px;
-  padding: 20px;
+  height: 100vh;
 }
 
 .header {
+  background-color: #ffc107;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 70%;
   margin-bottom: 20px;
 }
+
 .header h1 {
-  color: #161814;
+  color: #1a1a1a;
+  font-size: 2em;
+  margin: 0;
 }
 
-.newTask{
-  width: 50%;
-  padding: 10px;
-  border: 3px solid #000; 
-  background: #f2f2f2;
-  margin: 100px 0;
-}
-#myInputField {
-  width: 50%;
-  padding: 10px;
-  border: 3px solid #000; 
-  background: #f2f2f2;
-  margin: 10px 0;
-}
-#newTask {
-  margin-top: 60px; 
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
 .addBtn {
-  padding: 10px;
-  background: #000;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #ffc107;
   border: none;
-  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #555;
+}
+
+#myInputField {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #1a1a1a;
+}
+
+#newTask {
+  max-width: 400px;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-ul li {
-  padding: 30px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 1px solid #ccc;
-
+.new-task {
+  background-color: #333;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.close {
-  padding: 0 5px;
+
+button {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  background-color: #ff6464;
   color: #fff;
+  border-radius: 3px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
 }
 
+button:hover {
+  background-color: #ff4646;
+}
